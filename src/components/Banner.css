@@ -14,12 +14,28 @@
   padding-bottom: 40px;
   max-width: 300px;
 }
+.banner__search {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.banner__search > button {
+  background-color: white;
+  color: #ff7779;
+  text-transform: inherit;
+  font-weight: 600;
+}
 .banner__info > button {
   background-color: #ff7779;
   color: white;
   text-transform: inherit;
   margin-top: 20px;
-  font-weight: 600px;
+  font-weight: 600;
+}
+
+.banner__info > button:hover {
+  background-color: white;
+  color: #ff7779;
 }
 
 .banner__info > h5 {
