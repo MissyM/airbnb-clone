@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/theme/default.css";
 import "react-date-range/dist/styles.css";
+import "./DataPicker.css";
+import { Button } from "@material-ui/core";
+import PeopleIcon from "@material-ui/icons/People";
 
 function DatePicker() {
   const [startDate, setStartDate] = useState(new Date());
@@ -18,8 +21,12 @@ function DatePicker() {
     setEndDate(ranges.selection.endDate);
   }
   return (
-    <div className="DatePicker">
+    <div className="datePicker">
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <h2>Number of guests</h2>
+      <PeopleIcon />
+      <input min={0} defaultValue={1} type="number" />
+      <Button>Search Airbnb</Button>
     </div>
   );
 }
