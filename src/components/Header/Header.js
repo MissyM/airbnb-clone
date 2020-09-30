@@ -10,7 +10,7 @@ function Header() {
     <div className="header">
       <img
         className="header__icon"
-        src={require("../assets/airbnb.svg")}
+        src={require("../../assets/airbnb.svg")}
         alt=""
       />
 
